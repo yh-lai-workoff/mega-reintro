@@ -1,11 +1,14 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+    //"image": "mcr.microsoft.com/devcontainers/typescript-node",
+    "build": {"dockerfile": "Dockerfile"},
     "customizations": {
         "vscode": {
             "extensions": [
                 "vscjava.vscode-java-pack",
-                "ms-python.python"
+                "ms-python.python",
+                "Angular.ng-template"
             ]
         }
-    }
+    },
+    //"forwardPorts": [4200]
 }
